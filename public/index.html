@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Portfolio of Isah Philip Sambo, a web developer based in Nigeria specializing in responsive websites and UI/UX design.">
+        <meta name="keywords" content="web developer, Nigeria, UI/UX, responsive design, Isah Philip Sambo">
+        <meta name="author" content="Isah Philip Sambo">
+        <title>Portfolio | Isah Philip Sambo</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="icon" href="assets/icons/IPS logo-1.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Alert Container -->
+            <div id="alert-container" class="alert-container">
+                <button id="close-alert" aria-label="Close alert">
+                    <i class="hgi hgi-stroke hgi-cancel-01"></i>
+                </button>
+                <span id="alert-message">Message sent successfully!</span>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="user-name">
+                    <span style="font-size: 1.5rem;">Isah Philip Sambo</span>
+                    <div class="status online"><div class="dot"></div></div>
+                </div>
+                <div class="user-avatar">
+                    <img src="assets/img/pfp.jpeg" alt="Isah Philip Sambo's profile picture" class="avatar" />
+                </div>
+                <div class="role-info">
+                    <h5>Role</h5>
+                    <h4>Web Developer</h4>
+                </div>
+                <div class="location-info">
+                    <h5>Location</h5>
+                    <h4>Nigeria</h4>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/2349013643677" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <i class="hgi-stroke hgi-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/IsahPhilip" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="hgi-stroke hgi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/isah-philip" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="hgi-stroke hgi-linkedin-02"></i>
+                    </a>
+                    <a href="https://twitter.com/skyler_crypt" target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="hgi-stroke hgi-twitter"></i>
+                    </a>
+                    <a href="https://medium.com/@isahphilip50" target="_blank" rel="noopener" aria-label="Medium">
+                        <i class="hgi-stroke hgi-medium"></i>
+                    </a>
+                </div>
+                <button class="purple-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" aria-label="Work with me">
+                    Let's work together
+                </button>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <header class="mobile-header">
+                    <button class="dark-light-mode" aria-label="Toggle dark mode">
+                        <i class="hgi-stroke hgi-moon-02"></i>
+                    </button>
+                </header>
+
+                <div class="mobile-bottom-nav">
+                    <a href="#home" class="mobile-nav-item active">
+                        <i class="hgi-stroke hgi-home-01"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#work" class="mobile-nav-item">
+                        <i class="hgi-stroke hgi-layout-grid"></i>
+                        <span>Work</span>
+                    </a>
+                    <a href="#about-me" class="mobile-nav-item">
+                        <i class="hgi hgi-stroke hgi-user"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="#services" class="mobile-nav-item">
+                        <i class="hgi-stroke hgi-settings-02"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="#blog" class="mobile-nav-item">
+                        <i class="hgi-stroke hgi-book-open-01"></i>
+                        <span>Blog</span>
+                    </a>
+                    <a href="#contact" class="mobile-nav-item">
+                        <i class="hgi-stroke hgi-mail-01"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+
+                <header class="top-nav">
+                    <div class="nav-header">
+                        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+                            <i class="hgi-stroke hgi-menu-01"></i>
+                        </button>
+                    </div>
+                    <nav id="nav-links">
+                        <a href="#home" class="nav-link active">
+                            <i class="hgi-stroke hgi-home-01"></i>
+                            <span>Home</span>
+                        </a>
+                        <a href="#work" class="nav-link">
+                            <i class="hgi-stroke hgi-layout-grid"></i>
+                            <span>Work</span>
+                        </a>
+                        <a href="#about-me" class="nav-link">
+                            <i class="hgi hgi-stroke hgi-user"></i>
+                            <span>About</span>
+                        </a>
+                        <a href="#services" class="nav-link">
+                            <i class="hgi-stroke hgi-settings-02"></i>
+                            <span>Services</span>
+                        </a>
+                        <a href="#blog" class="nav-link">
+                            <i class="hgi-stroke hgi-book-open-01"></i>
+                            <span>Blog</span>
+                        </a>
+                        <a href="#contact" class="nav-link">
+                            <i class="hgi-stroke hgi-mail-01"></i>
+                            <span>Contact</span>
+                        </a>
+                    </nav>
+                    <div class="left-side">
+                        <button class="dark-light-mode" aria-label="Toggle dark mode">
+                            <i class="hgi-stroke hgi-moon-02"></i>
+                        </button>
+                        <a href="#contact" class="purple-btn nav-cta" aria-label="Start a conversation">
+                            Let's Talk 
+                            <i class="hgi-stroke hgi-bubble-chat"></i>
+                        </a>
+                    </div>
+                </header>
+
+                <div class="sections">
+                    <section class="hero" id="home">
+                        <div class="hero-content">
+                            <div class="hero-info">
+                                <h1 class="animate-on-scroll">Isah Philip Sambo</h1>
+                                <h2 class="animate-on-scroll">Web Developer</h2>
+                            </div>
+                            <div class="hero-actions">
+                                <a href="#work" class="purple-btn" aria-label="View my work" style="color: white;">
+                                    My Work 
+                                    <i class="hgi-stroke hgi-work-history"></i>
+                                </a>
+                                <a href="assets/docs/cv.pdf" download class="purple-btn" aria-label="Download CV" style="color: white;">
+                                    Download CV
+                                    <i class="hgi-stroke hgi-download-04"></i>
+                                </a>
+                            </div>
+
+                            <div class="social-links-hero">
+                                <a href="https://wa.me/2349013643677" target="_blank" rel="noopener" aria-label="WhatsApp">
+                                    <i class="hgi-stroke hgi-whatsapp"></i>
+                                </a>
+                                <a href="https://github.com/IsahPhilip" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="hgi-stroke hgi-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/isah-philip" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <i class="hgi-stroke hgi-linkedin-02"></i>
+                                </a>
+                                <a href="https://twitter.com/skyler_crypt" target="_blank" rel="noopener" aria-label="Twitter">
+                                    <i class="hgi-stroke hgi-twitter"></i>
+                                </a>
+                                <a href="https://medium.com/@isahphilip50" target="_blank" rel="noopener" aria-label="Medium">
+                                    <i class="hgi-stroke hgi-medium"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img class="decor-img" src="assets/img/decor.png" alt="Decorative element" loading="lazy">
+                    </section>
+
+                    <section class="work" id="work">
+                        <div class="section-title">
+                            <div class="title">
+                                <i class="hgi-stroke hgi-stars"></i>
+                                <h4>Work</h4>
+                            </div>
+                            <h2 class="animate-on-scroll">Checkout my featured</h2>
+                            <h2 class="animate-on-scroll">projects</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="project-grid">
+                                <a href="#" class="project-card">
+                                    <img src="assets/img/project1.jpg" alt="E-commerce website project" loading="lazy" />
+                                    <p>E-commerce Platform</p>
+                                </a>
+                                <a href="#" class="project-card">
+                                    <img src="assets/img/project2.jpg" alt="Portfolio website project" loading="lazy" />
+                                    <p>Portfolio Website</p>
+                                </a>
+                                <a href="#" class="project-card">
+                                    <img src="assets/img/project3.jpg" alt="Event management app project" loading="lazy" />
+                                    <p>Event Management App</p>
+                                </a>
+                                <a href="#" class="project-card">
+                                    <img src="assets/img/project4.jpg" alt="Blog platform project" loading="lazy" />
+                                    <p>Blog Platform</p>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="about-me" id="about-me">
+                        <div class="section-title">
+                            <div class="title">
+                                <i class="hgi-stroke hgi-stars"></i>
+                                <h4>About Me</h4>
+                            </div>
+                            <h2>Learn more about me</h2>
+                            <h2>and my journey</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="achievement-section">
+                                <div class="goal">
+                                    <span style="font-size: 2.5rem;">4+</span>
+                                    <p>Years of experience</p>
+                                </div>
+                                <div class="goal">
+                                    <span style="font-size: 2.5rem;">10+</span>
+                                    <p>Completed Projects</p>
+                                </div>
+                                <div class="goal">
+                                    <span style="font-size: 2.5rem;">5</span>
+                                    <p>Programming Languages</p>
+                                </div>
+                                <div class="goal">
+                                    <span style="font-size: 2.5rem;">3</span>
+                                    <p>Certifications</p>
+                                </div>
+                                <div class="goal">
+                                    <span style="font-size: 2.5rem;">15+</span>
+                                    <p>Happy Clients</p>
+                                </div>
+                                <div class="goal">
+                                    <span style="font-size: 2.5rem;">2</span>
+                                    <p>Hackathon Awards</p>
+                                </div>
+                            </div>
+
+                            <div class="about-section">
+                                <div class="about-text">
+                                    <p>
+                                        Hello! I'm Isah Philip Sambo, a passionate web developer based in Abuja, Nigeria. With over 4 years of experience, I specialize in building modern, responsive websites and web applications that deliver great user experiences. I enjoy turning complex problems into simple, beautiful, and intuitive solutions. When I'm not coding, I love learning new technologies and collaborating on exciting projects.
+                                    </p>
+                                    <a href="assets/docs/cv.pdf" download class="purple-btn" style="width: 14rem;" aria-label="Download CV">
+                                        Download CV
+                                        <i class="hgi-stroke hgi-download-04"></i>
+                                    </a>
+                                </div>
+                                <div class="about-info">
+                                    <div>
+                                        <h5>Name</h5>
+                                        <p>Isah Philip Sambo</p>
+                                    </div>
+                                    <div>
+                                        <h5>Phone</h5>
+                                        <p>+2349013643677</p>
+                                    </div>
+                                    <div>
+                                        <h5>Email</h5>
+                                        <p>Isahphilip50@gmail.com</p>
+                                    </div>
+                                    <div>
+                                        <h5>Location</h5>
+                                        <p>Abuja, Nigeria</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="education-section">
+                                <h3>My education</h3>
+                                <div class="education-item">
+                                    <div>
+                                        <p>Degree</p>
+                                    </div>
+                                    <div>
+                                        <h4>B.Sc. Computer Science</h4>
+                                        <p>University of Abuja, 2018 - 2022</p>
+                                    </div>
+                                    <div>
+                                        <p>Graduated with Second Class Upper. Focused on software engineering, algorithms, and web development. Led several group projects and participated in coding competitions.</p>
+                                    </div>
+                                </div>
+
+                                <div class="education-item">
+                                    <div>
+                                        <p>Certification</p>
+                                    </div>
+                                    <div>
+                                        <h4>Frontend Web Development</h4>
+                                        <p>Coursera/Meta, 2023</p>
+                                    </div>
+                                    <div>
+                                        <p>Completed a professional certificate program covering HTML, CSS, JavaScript, React, and UI/UX fundamentals. Built several portfolio projects as part of the coursework.</p>
+                                    </div>
+                                </div>
+
+                                <div class="education-item">
+                                    <div>
+                                        <p>Certification</p>
+                                    </div>
+                                    <div>
+                                        <h4>JavaScript Algorithms & Data Structures</h4>
+                                        <p>freeCodeCamp, 2022</p>
+                                    </div>
+                                    <div>
+                                        <p>Mastered core JavaScript concepts, ES6, and problem-solving with algorithms and data structures. Earned certification after completing hands-on coding challenges.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-section">
+                                <h3>Work experience</h3>
+                                <div class="experience-item">
+                                    <div>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                    <div>
+                                        <h4>Freelance</h4>
+                                        <p>Remote | 2022 - Present</p>
+                                    </div>
+                                    <div>
+                                        <p>Developed responsive websites and web applications for clients in various industries. Collaborated with designers and backend developers to deliver high-quality solutions using React, JavaScript, and modern CSS frameworks.</p>
+                                    </div>
+                                </div>
+
+                                <div class="experience-item">
+                                    <div>
+                                        <p>Web Developer Intern</p>
+                                    </div>
+                                    <div>
+                                        <h4>Tech Innovators Ltd.</h4>
+                                        <p>Abuja, Nigeria | Jan 2022 - Aug 2022</p>
+                                    </div>
+                                    <div>
+                                        <p>Worked on a team to build and maintain company websites. Assisted in developing new features, fixing bugs, and optimizing site performance. Gained hands-on experience with version control and agile workflows.</p>
+                                    </div>
+                                </div>
+
+                                <div class="experience-item">
+                                    <div>
+                                        <p>Student Developer</p>
+                                    </div>
+                                    <div>
+                                        <h4>University of Abuja</h4>
+                                        <p>2019 - 2022</p>
+                                    </div>
+                                    <div>
+                                        <p>Led and contributed to several group projects, including a campus event management app and a student portal. Participated in hackathons and coding competitions, earning recognition for innovative solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tools-section">
+                                <h3>My favorite tools & languages</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <img src="assets/icons/visual-studio-code.png">
+                                        <h4>VS Code</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/html-5.png">
+                                        <h4>HTML5</h>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/css3.png">
+                                        <h4>CSS3</h>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/javascript.png">
+                                        <h4>JavaScript</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/php.png">
+                                        <h4>PHP</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/react.png">
+                                        <h4>React</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/node-js.png">
+                                        <h4>Node JS</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/photoshop.png">
+                                        <h4>Photoshop</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/slack.png">
+                                        <h4>Slack</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/github.png">
+                                        <h4>GitHub</h4>
+                                    </div>
+
+                                    <div class="tool-item">
+                                        <img src="assets/icons/figma.png">
+                                        <h4>Figma</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="services" id="services">
+                        <div class="section-title">
+                            <div class="title">
+                                <i class="hgi-stroke hgi-stars"></i>
+                                <h4>Services</h4>
+                            </div>
+                            <h2>Explore the services I offer</h2>
+                            <h2>to help you succeed</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="services-list">
+                                <div class="service-card">
+                                    <h3>Website Development</h3>
+                                    <p>Custom, modern, and responsive websites tailored to your needs.</p>
+                                    <img src="assets/img/website_development.png">
+                                </div>
+                                <div class="service-card">
+                                    <h3>Responsive Design</h3>
+                                    <p>Ensuring your site looks great on all devices and screen sizes.</p>
+                                    <img src="assets/img/responsive_design.png">
+                                </div>
+                                <div class="service-card">
+                                    <h3>UI/UX Design</h3>
+                                    <p>Intuitive and engaging user interfaces for better user experience.</p>
+                                    <img src="assets/img/uiux design.png">
+                                </div>
+                                <div class="service-card">
+                                    <h3>Maintenance & Support</h3>
+                                    <p>Ongoing support and updates to keep your website running smoothly.</p>
+                                    <img src="assets/img/maintenance_support.png">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="blog" id="blog">
+                        <div class="section-title">
+                            <div class="title"><i class="hgi-stroke hgi-stars"></i><h4>Blog</h4></div>
+                            <h2>My Latest Articles</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="blog-grid" id="blog-grid">
+                                <!-- Blog cards loaded dynamically via JavaScript -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="contact" id="contact">
+                        <div class="section-title">
+                            <div class="title">
+                                <i class="hgi-stroke hgi-stars"></i>
+                                <h4>Contact</h4>
+                            </div>
+                            <h2>Get in touch with me for</h2>
+                            <h2>collaborations or inquiries</h2>
+                        </div>
+        
+                        <div class="section-content">
+                            <form id="contact-form" class="contact-form" method="POST" action="/api/contact">
+                                <div class="input-group">
+                                    <input type="text" name="full_name" id="full_name" placeholder="Full name" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="textarea-group">
+                                    <textarea name="message" id="message" rows="10" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="purple-btn">
+                                    Send message
+                                    <i class="hgi-stroke hgi-sent"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/6859d9d9ee661a190cce5168/1iufflugk';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+    </body>
+</html>
