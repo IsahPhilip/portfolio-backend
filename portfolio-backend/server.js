@@ -13,6 +13,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+console.log("MAIL_USER:", process.env.MAIL_USER ? "set" : "missing");
+console.log("MAIL_PASS:", process.env.MAIL_PASS ? "set" : "missing");
+
 // Configure Nodemailer (use env vars instead of hardcoding)
 const transporter = nodemailer.createTransport({
   service: 'gmail',
