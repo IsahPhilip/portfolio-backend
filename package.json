@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Isah Philip Sambo - Web Developer",
+  "author": "Isah Philip Sambo",
+  "scripts": {
+    "install:all": "npm install && cd portfolio-backend && npm install",
+    "dev": "cd portfolio-backend && npm start"
+  },
+  "dependencies": {
+    "lucide": "^0.542.0"
+  },
+  "devDependencies": {}
+}

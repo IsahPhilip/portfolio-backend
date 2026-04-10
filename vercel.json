@@ -1,0 +1,22 @@
+{
+  "buildCommand": "echo 'Build complete'",
+  "framework": "static",
+  "public": "portfolio-frontend",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    }
+  ],
+  "env": {
+    "MAIL_USER": "@MAIL_USER",
+    "MAIL_PASS": "@MAIL_PASS"
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x",
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
